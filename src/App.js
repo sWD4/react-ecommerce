@@ -7,6 +7,9 @@ import { createRoot } from "react-dom/client";
 import {createBrowserRouter,RouterProvider,Route,Link,} from "react-router-dom";
 import CartPage from './features/pages/CartPage';
 
+import Checkout from './features/pages/Checkout'
+import ProductDetailPage from './features/pages/ProductDetailPage';
+
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: '/cart',
     element: <CartPage></CartPage>,
+  },
+  {
+    path: '/checkout',
+    element: <Checkout></Checkout> ,
+  },
+  {
+    path: '/product-detail',
+    element: <ProductDetailPage></ProductDetailPage>,
   },
 ]);
 
